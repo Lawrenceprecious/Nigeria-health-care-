@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HealthConnect Nigeria connects citizens to trusted healthcare facilities, doctors, emergency services, and health information.">
+  <title>HealthConnect Nigeria — Healthcare access made simpler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="HealthConnect Nigeria home">
+        <span class="brand-mark">✚</span>
+        <span class="brand-copy"><strong>HealthConnect</strong><small>NIGERIA</small></span>
+      </a>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">☰<span class="sr-only">Open navigation</span></button>
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+        <a href="facilities.html">Facilities</a>
+        <a class="nav-emergency" href="emergency.html"><span class="status-dot"></span>Emergency</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="education.html">Health library</a>
+        <a href="blood-donation.html">Blood donation</a>
+        <a href="assistant.html">AI assistant</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-outline button-small" href="facilities.html">Find care <span>→</span></a>
+        <button class="button button-outline button-small" type="button" data-auth-action>Log out</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-home">
+        <div class="hero-orbit hero-orbit-one"></div>
+        <div class="hero-orbit hero-orbit-two"></div>
+        <div class="hero-content container narrow-center">
+          <div class="eyebrow eyebrow-light">✦ One trusted doorway to healthcare</div>
+          <h1>Healthcare access,<br><em>made simpler.</em></h1>
+          <p>Connect with trusted facilities, doctors, emergency services, and health information across Nigeria — all in one calm, purposeful platform.</p>
+          <form class="quick-search" id="home-search-form">
+            <label class="search-field" for="home-search"><span aria-hidden="true">⌕</span><input id="home-search" type="search" placeholder="Search a hospital, pharmacy, clinic or city"></label>
+            <button class="button button-primary" type="submit">Find care <span>→</span></button>
+            <div class="quick-search-tags" aria-label="Facility type shortcuts">
+              <button type="button" data-home-filter="hospital">🏥 Hospitals</button>
+              <button type="button" data-home-filter="pharmacy">💊 Pharmacies</button>
+              <button type="button" data-home-filter="laboratory">🔬 Laboratories</button>
+              <button type="button" data-home-filter="blood bank">🩸 Blood banks</button>
+              <button type="button" data-home-filter="clinic">⚕ Clinics</button>
+            </div>
+          </form>
+          <div class="hero-trust-row">
+            <div><span class="trust-icon">◇</span><strong>Verified services</strong><small>Built for confidence</small></div>
+            <div><span class="trust-icon">◷</span><strong>Available 24/7</strong><small>Help when it matters</small></div>
+            <a href="tel:112"><span class="trust-icon">⌕</span><strong>Emergency: 112</strong><small>Call now if urgent</small></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div><span class="eyebrow">Everything in one place</span><h2>Care that keeps moving.</h2></div>
+            <p>From finding a facility to understanding your next step, HealthConnect brings the essentials together in one simple experience.</p>
+          </div>
+          <div class="feature-grid">
+            <a class="feature-card feature-card-green" href="facilities.html"><span class="feature-icon">⌖</span><span><strong>Find nearby facilities</strong><small>Hospitals, pharmacies, labs, blood banks, and clinics.</small></span><b>→</b></a>
+            <a class="feature-card" href="appointments.html"><span class="feature-icon">□</span><span><strong>Book a doctor</strong><small>Browse specialists and submit a clear appointment request.</small></span><b>→</b></a>
+            <a class="feature-card" href="emergency.html"><span class="feature-icon feature-icon-red">!</span><span><strong>Get emergency help</strong><small>Reach 112 and state hotlines when every second matters.</small></span><b>→</b></a>
+            <a class="feature-card" href="education.html"><span class="feature-icon">▤</span><span><strong>Learn with confidence</strong><small>Practical health articles written for everyday life.</small></span><b>→</b></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container alert-banner">
+          <div class="alert-icon">!</div>
+          <div><span class="eyebrow">Health alert</span><h3>Stay informed, stay prepared.</h3><p>Check official announcements, vaccination drives, and public health notices in one place.</p></div>
+          <a class="button button-dark" href="education.html">Explore guidance <span>→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-row"><div><a class="brand brand-footer" href="index.html"><span class="brand-mark">✚</span><span class="brand-copy"><strong>HealthConnect</strong><small>NIGERIA</small></span></a><p>One trusted doorway to healthcare.</p></div><div class="footer-links"><a href="emergency.html">Emergency 112</a><a href="facilities.html">Find a facility</a><a href="assistant.html">Health assistant</a></div></div></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
